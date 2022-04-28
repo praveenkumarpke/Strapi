@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "crickets",
+  "info": {
+    "singularName": "cricket",
+    "pluralName": "crickets",
+    "displayName": "Cricket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Born": {
+      "type": "string"
+    },
+    "Profile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "About": {
+      "type": "richtext"
+    },
+    "email": {
+      "type": "email"
+    },
+    "contact": {
+      "type": "biginteger"
+    }
+  }
+}
